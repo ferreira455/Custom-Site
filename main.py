@@ -3,21 +3,21 @@ import random
 
 app = Flask(__name__)
 
-# Lista de imagens
-images = {
-    'alone': 'https://cdn.imgchest.com/files/4z9cveqxmv7.png',
-    'aot': 'https://cdn.imgchest.com/files/4gdcxd3r8d4.jpg',
-    'girl playing': 'https://cdn.imgchest.com/files/y8xcnea89x4.png',
-    'girl sleeping': 'https://cdn.imgchest.com/files/45xcv6awnm7.png',
-    'mountain': 'https://cdn.imgchest.com/files/4apc569ond4.png',
-    'solo leveling': 'https://cdn.imgchest.com/files/46acqnle987.png'
+# Lista de vídeos na pasta 'static/videos'
+videos = {
+    'alone': 'videos/alone.mp4',
+    'girl playing': 'videos/girl.mp4',
+    'girl sleeping': 'videos/girl-sleeping.mp4',
+    'mountain': 'videos/mountain.mp4',
+    'solo leveling': 'videos/solo-leveling.mp4',
+    'lonely': 'videos/lonely.mp4'
 }
 
 @app.route('/')
 def homepage():
-    # Seleciona uma imagem aleatória
-    random_image = random.choice(list(images.values()))
-    return render_template('index.html', background_image=random_image)
+    # Seleciona um vídeo aleatório
+    random_video = random.choice(list(videos.values()))
+    return render_template('index.html', background=random_video)
 
 if __name__ == '__main__':
     app.run(debug=True)
