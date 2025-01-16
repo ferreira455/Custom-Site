@@ -1,90 +1,29 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <title> Super Mangas</title>
-        <style>
-            body {
-                text-align: center;
-                font-size: 30px; /* Ajuste o valor conforme necessário */
-             }
-
-            h1 {
-                color: #3366cc;
-                 position: absolute;
-                 text-align: left;
-                 top: 15vw;
-            }
-            p {
-                 color: #ffffff;
-                 text-align: left;
-                 position: absolute;
-                 top: 80vw;
-            }
-            
-            h2 {
-                 color: #ffffff;
-                 text-align:left;
-                 position: absolute;
-                 top: 70vw;
-            }
-
-            img {
-                width: 100%;
-                border-radius: 10px
-            }
-            
-            .img1 {
-                width: 23%;
-                border-radius: 1px;
-                position: absolute;
-                top: 0vw;
-                left: 2vw;
-            }
-            .img3 {
-                width: 7%;
-                border-radius: 1px;
-                position: absolute;
-                top: 0vw;
-                left: 2.1vw;
-            }
-            .img2 {
-                width: 8%;
-                border-radius: 10px;
-                position: absolute;
-                top: 0vw;
-                left: 90vw;
-            }
-            
-            /* Adicionando uma cor de fundo */
-            body {
-                background-color: #141414;
-            }
-            
-            /* Gerando um quadrado em algum lugar da tela */
-            .quadrado {
-                width: 100vw;
-                height: 8.5vw;
-                background-color: #ffc0cb;
-                position: absolute;
-                top: 0px; 
-                left: 0px; 
-            }
-            
-        </style>
-    </head>
-    <body>
-        
-        <h2>mangas</h2>
-        
-        <p>Mais informações empolgantes para compartilhar.</p>
-        
-        <div class="quadrado"></div>
-        
-<a href=""><img class="img1" src="https://cdn.imgchest.com/files/g4z9cnpbqw7.png" alt="Descrição da imagem">
-        </a></p></a>
-                
-<a href="menu"><img class="img2" src="https://cdn.imgchest.com/files/p7bwcv5b367.jpg" alt="Descrição da imagem">
-        </a></p></a>
-        
-    </body>
-    </html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('{{ background_image }}'); /* Variável do Flask */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao meu site!</h1>
+</body>
+</html>
