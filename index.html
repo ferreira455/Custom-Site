@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Site</title>
+    <title>Site com Fundo Aleatório</title>
     <style>
         body {
             margin: 0;
@@ -12,7 +12,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('{{ background_image }}'); /* Variável do Flask */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -22,6 +21,25 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
     </style>
+    <script>
+        // Lista de imagens
+        const images = [
+            'https://cdn.imgchest.com/files/4z9cveqxmv7.png',
+            'https://cdn.imgchest.com/files/4gdcxd3r8d4.jpg',
+            'https://cdn.imgchest.com/files/y8xcnea89x4.png',
+            'https://cdn.imgchest.com/files/45xcv6awnm7.png',
+            'https://cdn.imgchest.com/files/4apc569ond4.png',
+            'https://cdn.imgchest.com/files/46acqnle987.png'
+        ];
+
+        // Seleciona uma imagem aleatória
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        // Define como fundo da página
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.backgroundImage = `url('${randomImage}')`;
+        });
+    </script>
 </head>
 <body>
     <h1>Bem-vindo ao meu site!</h1>
