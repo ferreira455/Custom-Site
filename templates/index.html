@@ -25,11 +25,16 @@
         }
         h1 {
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            position: relative;
-            z-index: 1; /* Garante que o texto está na frente do vídeo */
+            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 1;
+            top: 20px; /* Distância do topo */
+            left: 50%;
+            transform: translateX(-50%); /* Centraliza horizontalmente */
             text-align: center;
+            font-size: 5vw;
         }
+
     </style>
 </head>
 <body>
