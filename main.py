@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 # Lista de vídeos na pasta 'static/videos'
 videos = {
-    'alone': 'videos/alone.mp4',
-    'girl playing': 'videos/girl.mp4',
-    'girl sleeping': 'videos/girl-sleeping.mp4',
-    'mountain': 'videos/mountain.mp4',
-    'solo leveling': 'videos/solo-leveling.mp4',
-    'lonely': 'videos/lonely.mp4'
+    'alone': 'static/videos/alone.mp4',
+    'girl playing': 'static/videos/girl.mp4',
+    'girl sleeping': 'static/videos/girl-sleeping.mp4',
+    'mountain': 'static/videos/mountain.mp4',
+    'solo leveling': 'static/videos/solo-leveling.mp4',
+    'lonely': 'static/videos/lonely.mp4'
 }
 
 @app.route('/')
