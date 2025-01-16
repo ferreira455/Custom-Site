@@ -3,14 +3,17 @@ import random
 
 app = Flask(__name__)
 
-# Lista de vídeos na pasta 'static/videos'
+# Domínio do Render (substitua pelo seu domínio real)
+BASE_URL = "https://custom-site-3gur.onrender.com/static"
+
+# Lista de vídeos com URLs completas
 videos = {
-    'alone': 'videos/alone.mp4',
-    'girl playing': 'videos/girl.mp4',
-    'girl sleeping': 'videos/girl-sleeping.mp4',
-    'mountain': 'videos/mountain.mp4',
-    'solo leveling': 'videos/solo-leveling.mp4',
-    'lonely': 'videos/lonely.mp4'
+    'alone': f'{BASE_URL}/videos/alone.mp4',
+    'girl playing': f'{BASE_URL}/videos/girl.mp4',
+    'girl sleeping': f'{BASE_URL}/videos/girl-sleeping.mp4',
+    'mountain': f'{BASE_URL}/videos/mountain.mp4',
+    'solo leveling': f'{BASE_URL}/videos/solo-leveling.mp4',
+    'lonely': f'{BASE_URL}/videos/lonely.mp4'
 }
 
 @app.route('/')
