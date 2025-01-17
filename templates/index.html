@@ -36,31 +36,30 @@
         }
 
         .quadrado {
-            width: 150px; /* Largura */
-            height: 150px; /* Altura */
-            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo */
-            position: relative; /* Define a base para posicionamento */
+            width: 3vw; /* Largura do quadrado */
+            height: 35vw; /* Altura do quadrado */
+            background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo */
+            position: absolute; /* Define o posicionamento absoluto */
+            right: 0; /* Posiciona o quadrado na borda direita */
+            bottom: 20px; /* Distância do fundo da tela (ajuste conforme necessário) */
             border: 2px solid #2c3e50; /* Borda opcional */
             border-radius: 10px; /* Cantos arredondados */
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-            cursor: pointer; /* Indica que é clicável */
-            transition: transform 0.3s, background-color 0.3s; /* Transições suaves */
+            display: flex; /* Flexbox para centralizar conteúdo */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
         }
 
+
+
         .openai {
-            position: absolute;
-            bottom: 50px;
-            padding: 10px 20px;
-            font-size: 1.5rem;
-            color: white;
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            border-radius: 8px;
+            display: flex; /* Garante que o conteúdo dentro do link seja flexível */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            text-decoration: none; /* Remove sublinhado */
             cursor: pointer;
             z-index: 1;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-            text-decoration: none; /* Remove o sublinhado */
-            display: inline-block; /* Faz o link se comportar como botão */
+            border-radius: 8px;
         }
         .openai:hover {
             background: rgba(255, 255, 255, 0.2);
@@ -80,14 +79,14 @@
         Seu navegador não suporta vídeos em HTML5.
     </video>
 
-    <div class="quadrado"></div>
+    <div class="quadrado">
+        <a href="https://chatgpt.com/c/67894af7-df64-800e-b17c-a0e09440bab8" target="_blank" class="openai">
+            <img src="static/openai.png" alt="Open AI site">
+        </a>
+    </div>
     
     <!-- Conteúdo principal -->
     <h1>As possibilidades são infinitas..</h1>
-
-    <a href="https://chatgpt.com/c/67894af7-df64-800e-b17c-a0e09440bab8" target="_blank" class="openai">
-        <img src="static/openai.png" alt="Abrir site">
-    </a>
     
 </body>
 </html>
